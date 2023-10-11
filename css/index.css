@@ -108,11 +108,12 @@
   padding: 14px;
 }
 
-.satisfaction-completed {
+.satisfaction-completed,
+.satisfaction-form.hide {
   display: none;
 }
 
-.satisfaction-form[style="display: none;"] + .satisfaction-completed {
+.satisfaction-form.hide + .satisfaction-completed {
   display: flex;
   gap: 24px;
 }
