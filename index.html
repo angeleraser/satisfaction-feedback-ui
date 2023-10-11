@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <title>Satisfaction Feedback UI</title>
+  </head>
+  <body class="app">
+    <form id="form" class="satisfaction-form card">
+      <h1 class="satisfaction-form-title">
+        How satisfied are you with our customer support performance?
+      </h1>
+      <div class="satisfaction-form-options">
+        <label for="unhappy" class="satisfaction-option">
+          <input
+            type="radio"
+            value="unhappy"
+            class="satisfaction-option-radio"
+            name="feedback"
+            id="unhappy"
+          />
+          <div class="satisfaction-option-content">
+            <div class="satisfaction-option-icon">☹️</div>
+            <h2 class="satisfaction-option-label">Unhappy</h2>
+          </div>
+        </label>
+
+        <label for="neutral" class="satisfaction-option">
+          <input
+            type="radio"
+            value="neutral"
+            class="satisfaction-option-radio"
+            name="feedback"
+            id="neutral"
+          />
+          <div class="satisfaction-option-content">
+            <div class="satisfaction-option-icon">😐</div>
+            <h2 class="satisfaction-option-label">Neutral</h2>
+          </div>
+        </label>
+
+        <label for="satisfied" class="satisfaction-option">
+          <input
+            type="radio"
+            value="satisfied"
+            class="satisfaction-option-radio"
+            name="feedback"
+            id="satisfied"
+          />
+
+          <div class="satisfaction-option-content">
+            <div class="satisfaction-option-icon">🙂</div>
+            <h2 class="satisfaction-option-label">Satisfied</h2>
+          </div>
+        </label>
+      </div>
+      <button class="satisfaction-form-btn">Send Review</button>
+    </form>
+
+    <section id="result" class="satisfaction-completed card">
+      <div class="icon">❤️</div>
+      <h2 class="title">Thank You!</h2>
+      <h2 class="title feedback-result">Feedback: </h2>
+      <div class="text">
+        We'll use your feedback to improve our customer support
+      </div>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
